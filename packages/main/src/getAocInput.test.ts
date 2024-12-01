@@ -1,3 +1,4 @@
+import { Effect } from 'effect';
 import { beforeAll, describe, expect, it, vi } from 'vitest';
 import { getAocInputLines } from './getAocInput';
 
@@ -10,8 +11,9 @@ describe('getAocInputLines', () => {
       ok: true,
     } as Response);
   });
+
   it('should return the input for a given year and day', async () => {
-    const input = await getAocInputLines(2024, 1);
+    const input = await Effect.runPromise(getAocInputLines(2024, 1));
     expect(input).toBeDefined();
     expect(input).toEqual(['15131   78158', '32438   35057', '12503   57702']);
   });

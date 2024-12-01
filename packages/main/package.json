@@ -4,18 +4,14 @@
   "type": "module",
   "license": "MIT",
   "description": "The server template",
-  "repository": {
-    "type": "git",
-    "url": "<PLACEHOLDER>",
-    "directory": "packages/server"
-  },
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "dev": "vite-node src/main.ts --watch"
   },
   "dependencies": {
-    "effect": "catalog:",
     "@types/node": "catalog:",
     "@vitest/coverage-v8": "catalog:",
+    "effect": "catalog:",
     "tslib": "^2.8.1",
     "typescript": "catalog:",
     "vite": "catalog:",
@@ -32,5 +28,8 @@
         "**/*.ts"
       ]
     }
+  },
+  "devDependencies": {
+    "vite-node": "^2.1.6"
   }
 }

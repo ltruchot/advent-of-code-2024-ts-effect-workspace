@@ -9,15 +9,4 @@ export default defineConfig({
       reportsDirectory: './coverage', // dossier de sortie
     },
   },
-  build: {
-    sourcemap: true,
-    outDir: './dist',
-    emptyOutDir: false,
-    lib: {
-      entry: './src/index.ts',
-      name: 'mylib',
-      formats: ['es', 'cjs', 'umd', 'iife'],
-      fileName: (format) => `index.${format}.js`,
-    },
-  },
 });

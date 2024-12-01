@@ -86,6 +86,10 @@ importers:
       vitest:
         specifier: 'catalog:'
         version: 2.1.5(@types/node@20.17.6)
+    devDependencies:
+      vite-node:
+        specifier: ^2.1.6
+        version: 2.1.6(@types/node@20.17.6)
 
 packages:
 
@@ -1551,6 +1555,11 @@ packages:
   vite-node@2.1.5:
     resolution: {integrity: sha512-rd0QIgx74q4S1Rd56XIiL2cYEdyWn13cunYBIuqh9mpmQr7gGS0IxXoP8R6OaZtNQQLyXSWbd4rXKYUbhFpK5w==}
     engines: {node: ^18.0.0 || >=20.0.0}
+    hasBin: true
+
+  vite-node@2.1.6:
+    resolution: {integrity: sha512-DBfJY0n9JUwnyLxPSSUmEePT21j8JZp/sR9n+/gBwQU6DcQOioPdb8/pibWfXForbirSagZCilseYIwaL3f95A==}
+    engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
 
   vite@5.4.11:
@@ -3223,6 +3232,24 @@ snapshots:
       punycode: 2.3.1
 
   vite-node@2.1.5(@types/node@20.17.6):
+    dependencies:
+      cac: 6.7.14
+      debug: 4.3.7
+      es-module-lexer: 1.5.4
+      pathe: 1.1.2
+      vite: 5.4.11(@types/node@20.17.6)
+    transitivePeerDependencies:
+      - '@types/node'
+      - less
+      - lightningcss
+      - sass
+      - sass-embedded
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+
+  vite-node@2.1.6(@types/node@20.17.6):
     dependencies:
       cac: 6.7.14
       debug: 4.3.7
