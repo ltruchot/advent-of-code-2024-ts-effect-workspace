@@ -1,0 +1,36 @@
+{
+  "name": "@aoc-2024-workspace/main",
+  "version": "0.0.0",
+  "type": "module",
+  "license": "MIT",
+  "description": "The server template",
+  "repository": {
+    "type": "git",
+    "url": "<PLACEHOLDER>",
+    "directory": "packages/server"
+  },
+  "scripts": {
+    "test": "vitest"
+  },
+  "dependencies": {
+    "effect": "catalog:",
+    "@types/node": "catalog:",
+    "@vitest/coverage-v8": "catalog:",
+    "tslib": "^2.8.1",
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vitest": "catalog:"
+  },
+  "effect": {
+    "generateExports": {
+      "include": [
+        "**/*.ts"
+      ]
+    },
+    "generateIndex": {
+      "include": [
+        "**/*.ts"
+      ]
+    }
+  }
+}

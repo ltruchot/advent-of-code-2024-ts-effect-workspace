@@ -1,0 +1,14 @@
+dist
+node_modules
+.gitignore
+.github
+.husky
+.nvmrc
+.prettierignore
+LICENSE
+*.md
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+postcss.config.js
+

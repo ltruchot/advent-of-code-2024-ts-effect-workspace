@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "allowUnusedLabels": true
+  },
+  "include": ["./packages/**/*.{js,mjs,cjs,ts}", "./*.{js,mjs,cjs,ts}", "eslint.config.mjs"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,14 @@
+packages:
+  - packages/*
+
+catalog:
+  '@types/node': 20.17.6
+  '@vitest/coverage-v8': 2.1.5
+  dayjs: 1.11.13
+  effect: 3.10.19
+  jsdom: 25.0.1
+  typescript: 5.3.3
+  vite: 5.4.11
+  vitest: 2.1.5
+
+
